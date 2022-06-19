@@ -11,6 +11,6 @@ char	*ft_strrchr(const char *str, int c)
 	while (*str != c && len > 0)
 		str--;
 	if (*str == c)
-		return (str);
+		return ((char *)str);
 	return (0);
 }
