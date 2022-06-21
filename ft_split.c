@@ -4,37 +4,50 @@
 int	count_words(const char *str, char c)
 {
 	int	count;
+	int	i;
+	char	*dil;
 
 	count = 0;
-	while (*str)
+	i = 0;
+	while (str[i])
 	{
-		if (ft_strchr(str, c) == 0)
-			return (count);
-		count++;
-		str = ft_strchr(str, c) + 1;
+		dil = ft_strchr(str + i, c);
+		if (!dil && i < ft_strlen(str) - 1){
+			count++;
+			i = ft_strlen(str) - 1;
+		}
+		else {
+			i = (int) (dil - str);
+			if (dil && i > 0 && str[i - 1] != 0) 
+				count++;
+		}
+		i++;
 	}
 	return (count);
+}
+
+char	*isword(const char *s, char c)
+{
+
+
 }
 
 char	**ft_split(char const *s, char c)
 {
 	int	i;
 	char	**split;
-	char	*found;
+	int	words_count;
 
 	if (!s || !c)
 		return (0);
-	split = malloc(sizeof(char) * (count_words(s, c) + 1));
+	words_count = count_words(s, c);
+	split = malloc(sizeof(char) * (words_count + 1));
 	if (!split)
 		return (0);
 	i = 0;
-	while (*s){
-		found = ft_strchr(s, c);
-		if (!found)
-			break;
-		split[i] = ft_substr(s, 0, found - s);
-		i++;
-		s = found + 1;
+	while (i < words_count){
+		
 	}
+	split[i] = 0;
 	return (split);
 }
