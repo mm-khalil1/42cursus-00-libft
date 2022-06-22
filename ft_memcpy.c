@@ -11,11 +11,10 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	pd = (unsigned char *) dest;
 	ps = (unsigned char *) src;
 	i = 0;
-	while (i < n && ps[i])
+	while (i < n)
 	{
 		pd[i] = ps[i];
 		i++;
 	}
-	pd[i] = 0;
 	return (pd);
 }
