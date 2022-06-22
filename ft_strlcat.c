@@ -1,11 +1,11 @@
-#include <libft.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
-	size_t	i;
-	size_t	j;
+	unsigned int	i;
+	unsigned int	j;
 
-	if (dest == 0 || src == 0)
+	if (!dest || !src)
 		return (0);
 	i = 0;
 	j = 0;
@@ -18,5 +18,5 @@ size_t	ft_strlcat(char *dest, const char *src, size_t n)
 	}
 	if (n > 0 && i > 0)
 		dest[i + j] = 0;
-	return (i);
+	return (i + j);
 }
