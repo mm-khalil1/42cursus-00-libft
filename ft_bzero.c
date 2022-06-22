@@ -7,7 +7,6 @@ void	ft_bzero(void *str, size_t n)
 	if (!str)
 		return (0);
 	p = str;
-
 	while (n > 0)
 	{
 		*p = 0;
