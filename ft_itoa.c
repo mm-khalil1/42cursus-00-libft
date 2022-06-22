@@ -1,26 +1,38 @@
-#include <libft.h>
+#include "libft.h"
 
 int	count_digits(int n){
 	int	count;
 
 	count = 1;
 	if (n == -2147483648)
-		return (10);
-	else if (n < 0)
-		n = n * -1;
-	if (n > 0){
-		while (n > 9){
-			n /= 10;
-			count++;
-		}
+		return (11);
+	if (n < 0)
+		count++;
+	while (n > 9 || n < -9){
+		n /= 10;
+		count++;
 	}
 	return (count);
 }
 
-void	ft_putnbr(int n, int i){
-	if (n > 10){
-		ft_putnum(n, i);
+void	getnbr(char *num, int n, int i){
+	int	test;
 
+	test = 1000000000;
+	if (n == 0){
+		num[0] = '0';
+		num[1] = '\0';
+		return ;
+	}
+	while (n / test <= 0)
+		test /= 10;
+	while (test > 0){
+		num[i] = n / test + '0';
+		i++;
+		n = n % test;
+		test /= 10;
+	}
+	num[i] = '\0';
 }
 
 char	*ft_itoa(int n)
@@ -35,14 +47,14 @@ char	*ft_itoa(int n)
         if (n == -2147483648){
 		num[0] = '-';
 		num[1] = '2';
-		num = 147483648;
+		n = 147483648;
 		i = 2;
 	}
         else if (n < 0){
 		num[0] = '-';
-                n = n * -1;
+                n = -n;
 		i = 1;
 	}
-	ft_putnbr(n, i);
+	getnbr(num, n, i);
 	return (num);
 }

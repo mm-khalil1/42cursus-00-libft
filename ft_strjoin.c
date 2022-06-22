@@ -1,10 +1,9 @@
-#include <libft.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int	i;
-	char	*join;
+	unsigned int	i;
+	char		*join;
 
 	if (s1 == 0 || s2 == 0)
 		return (0);
@@ -12,16 +11,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (join == 0)
 		return (0);
 	i = 0;
-	while (*s1)
+	while (s1[i])
 	{
-		join[i] = *s1;
+		join[i] = s1[i];
 		i++;
-		s1++;
 	}
 	while (*s2)
 	{
-		join[i] = *s2;
-		i++;
+		join[i++] = *s2;
 		s2++;
 	}
 	join[i] = 0;
