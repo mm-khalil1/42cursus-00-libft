@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/23 11:34:04 by mkhalil           #+#    #+#             */
+/*   Updated: 2022/06/23 12:23:24 by mkhalil          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int	count_words(const char *str, char c)
 {
-	int	count;
-	int	i;
+	int		count;
+	int		i;
 	char	*dil;
 
 	count = 0;
@@ -11,14 +23,16 @@ int	count_words(const char *str, char c)
 	while (str[i])
 	{
 		dil = ft_strchr(str + i, c);
-		if (dil){
-                        i = (int) (dil - str);
-                        if (i > 0 && str[i - 1] != c)
-                                count++;
+		if (dil)
+		{
+			i = (int)(dil - str);
+			if (i > 0 && str[i - 1] != c)
+				count++;
 		}
-		else {
-                        count++;
-                        i = ft_strlen(str) - 1;
+		else
+		{
+			count++;
+			i = ft_strlen(str) - 1;
 		}
 		i++;
 	}
@@ -34,21 +48,25 @@ int	next_chr(const char *s, char c, size_t i)
 	return (i);
 }
 
-char	**ft_split(char const *s, char c){
+char	**ft_split(char const *s, char c)
+{
 	size_t	i;
 	size_t	j;
-	int	first_ind;
+	int		first_ind;
 	char	**split;
 
-	if (!s || !c || !(split = malloc(sizeof(char) * (count_words(s, c) + 1))))
+	split = malloc(sizeof(char) * (count_words(s, c) + 1));
+	if (!s || !c || !split)
 		return (0);
 	i = 0;
 	j = 0;
 	first_ind = -1;
-	while (i <= ft_strlen(s)){
+	while (i <= ft_strlen(s))
+	{
 		if (s[i] != c && first_ind == -1)
 			first_ind = i;
-		if ((s[i] == c || s[i] == 0) && first_ind > -1){
+		if ((s[i] == c || s[i] == 0) && first_ind > -1)
+		{
 			split[j++] = ft_substr(s, first_ind, i - first_ind);
 			i = next_chr(s, c, i + 1);
 			first_ind = i;

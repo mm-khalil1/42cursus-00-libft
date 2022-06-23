@@ -1,6 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/23 11:33:44 by mkhalil           #+#    #+#             */
+/*   Updated: 2022/06/23 11:33:45 by mkhalil          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd){
+void	ft_putnbr_fd(int n, int fd)
+{
 	if (fd < 0)
 		return ;
 	ft_putstr_fd(ft_itoa(n), fd);

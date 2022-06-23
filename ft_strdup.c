@@ -1,30 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/23 11:33:00 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 11:33:02 by mkhalil          ###   ########.fr       */
+/*   Created: 2022/06/23 13:06:40 by mkhalil           #+#    #+#             */
+/*   Updated: 2022/06/23 13:36:15 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memset(void *str, int c, size_t n)
+char	*ft_strdup(const char *src)
 {
-	size_t			i;
-	unsigned char	*p;
+	size_t	i;
+	char	*p;
 
-	if (!str)
-		return (0);
-	p = (unsigned char *) str;
 	i = 0;
-	while (i < n)
+	p = malloc(sizeof(char) * (ft_strlen(src) + 1));
+	if (p == NULL)
+		return (NULL);
+	i = 0;
+	while (src[i] != '\0')
 	{
-		p[i] = (unsigned char) c;
+		p[i] = src[i];
 		i++;
 	}
-	return ((void *)p);
+	p[i] = '\0';
+	return (p);
 }
+/*
+#include <stdio.h>
+int	main()
+{
+	char *original = "Hello, world";
+	char *copy = ft_strdup(original);
+	printf("Original=\"%s\"\nCopy    =\"%s\"\n", original, copy);
+}*/
