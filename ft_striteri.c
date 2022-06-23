@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:34:22 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 12:23:35 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/23 14:31:37 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	unsigned int	i;
 
 	if (!s || !f)
-		return (0);
+		return ;
 	i = 0;
 	while (*s)
 	{

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
+/*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 12:53:39 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 12:54:56 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/23 15:25:40 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdint.h>
 
 int		ft_atoi(const char *str);
 void	ft_bzero(void *str, size_t n);

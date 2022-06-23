@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:35:09 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 12:23:39 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/23 15:31:45 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t n)
 	if (dst == 0 || src == 0)
 		return (0);
 	i = 0;
+	if (n == 0)
+		return (ft_strlen(src));
 	while (src[i] && i < n - 1)
 	{
 		dst[i] = src[i];

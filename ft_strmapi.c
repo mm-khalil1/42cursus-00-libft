@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:35:25 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 12:23:43 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/23 14:31:14 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	while (s[i])
 	{
-		new_str = f(i, s[i]);
+		new_str[i] = f(i, s[i]);
 		i++;
 	}
 	new_str[i] = 0;

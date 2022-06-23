@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:34:12 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 12:23:33 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/23 14:58:53 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ char	*ft_strchr(const char *str, int c)
 {
 	if (!str)
 		return (0);
-	while (*str != c && *str != 0)
+	while (*str != (char)c && *str != 0)
 		str++;
-	if (*str == c)
+	if (*str == (char)c)
 		return ((char *)str);
 	return (0);
 }
