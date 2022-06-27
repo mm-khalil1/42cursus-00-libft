@@ -6,73 +6,70 @@
 /*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:34:04 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 12:23:24 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/27 15:29:44 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_words(const char *str, char c)
+int	next_chr_ind(const char *s, char c, size_t i)
 {
-	int		count;
-	int		i;
-	char	*dil;
+	while (s[i] == c && s[i])
+		i++;
+	if (!s[i])
+		return (-1);
+	return (i);
+}
 
-	count = 0;
+size_t	last_chr_ind(const char *s, char c)
+{
+	size_t	i;
+
 	i = 0;
-	while (str[i])
+	while (s[i] && s[i] != c)
+		i++;
+	return (i - 1);
+}
+
+int	count_words(const char *s, char c)
+{
+	size_t	count;
+	int		i;
+
+	i = 0;
+	count = 0;
+	while (s[i])
 	{
-		dil = ft_strchr(str + i, c);
-		if (dil)
-		{
-			i = (int)(dil - str);
-			if (i > 0 && str[i - 1] != c)
-				count++;
-		}
-		else
-		{
-			count++;
-			i = ft_strlen(str) - 1;
-		}
+		i = next_chr_ind(s, c, i);
+		if (i == -1)
+			return (count);
+		count++;
+		while (s[i] && s[i] != c)
 		i++;
 	}
 	return (count);
 }
 
-int	next_chr(const char *s, char c, size_t i)
-{
-	while (s[i] == c && s[i])
-		i++;
-	if (!s[i])
-		return (i - 1);
-	return (i);
-}
-
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
-	size_t	j;
-	int		first_ind;
 	char	**split;
 
-	split = malloc(sizeof(char) * (count_words(s, c) + 1));
-	if (!s || !c || !split)
+	split = (char **) malloc(sizeof(char *) * (count_words(s, c) + 1));
+	if (!s || !split)
 		return (0);
 	i = 0;
-	j = 0;
-	first_ind = -1;
-	while (i <= ft_strlen(s))
+	while (*s)
 	{
-		if (s[i] != c && first_ind == -1)
-			first_ind = i;
-		if ((s[i] == c || s[i] == 0) && first_ind > -1)
+		while (*s && *s == c)
+			s++;
+		if (*s && *s != c)
 		{
-			split[j++] = ft_substr(s, first_ind, i - first_ind);
-			i = next_chr(s, c, i + 1);
-			first_ind = i;
+			split[i++] = ft_substr(s, 0, last_chr_ind(s, c) + 1);
+			while (*s && *s != c)
+				s++;
 		}
-		i++;
 	}
-	split[j] = 0;
+	split[i] = 0;
 	return (split);
 }
