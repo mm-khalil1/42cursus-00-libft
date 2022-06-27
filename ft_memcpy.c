@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:32:39 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 11:32:40 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/27 17:53:53 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char	*ps;
 	size_t			i;
 
-	if (!dest || !src)
+	if (!dest && !src)
 		return (0);
 	pd = (unsigned char *) dest;
 	ps = (unsigned char *) src;

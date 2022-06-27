@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:33:00 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 11:33:02 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/27 17:54:03 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_memset(void *str, int c, size_t n)
 	size_t			i;
 	unsigned char	*p;
 
-	if (!str)
-		return (0);
 	p = (unsigned char *) str;
 	i = 0;
 	while (i < n)

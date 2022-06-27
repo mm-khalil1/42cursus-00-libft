@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/23 11:26:30 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 12:22:45 by mkhalil          ###   ########.fr       */
+/*   Created: 2022/06/27 17:52:57 by mkhalil           #+#    #+#             */
+/*   Updated: 2022/06/27 17:52:58 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,23 @@
 
 int	ft_atoi(const char *str)
 {
-	int	neg;
-	int	num;
+	int				sign;
+	unsigned int	num;
 
-	neg = 1;
+	sign = 1;
 	num = 0;
 	while (*str == ' ' || *str == '\t' || *str == '\n'
 		|| *str == '\v' || *str == '\f' || *str == '\r')
 		str++;
 	if (*str == '+' || *str == '-')
-	{
-		if (*str == '-')
-			neg *= -1;
-		str++;
-	}
+		if (*str++ == '-')
+			sign *= -1;
 	while (*str >= '0' && *str <= '9')
-	{
-		num = num * 10 + (*str - 48);
-		str++;
-	}
-	num *= neg;
+		num = num * 10 + (*str++ - 48);
+	if (num > 2147483647 && sign == 1)
+		return (-1);
+	if (num > 2147483648 && sign == -1)
+		return (0);
+	num *= sign;
 	return (num);
 }

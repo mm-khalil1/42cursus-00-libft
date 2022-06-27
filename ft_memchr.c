@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:32:06 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 11:32:07 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/27 17:53:45 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	*ft_memchr(const void *str, int c, size_t n)
 {
 	unsigned char	*p;
 
-	if (!str)
-		return (0);
 	p = (unsigned char *) str;
 	while (n > 0)
 	{

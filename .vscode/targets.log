@@ -8,11 +8,10 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This program built for i386-apple-darwin11.3.0
  
 
-# Make data base, printed on Mon Jun 27 12:33:51 2022
+# Make data base, printed on Mon Jun 27 15:51:31 2022
 
 # Variables
 
- 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
@@ -152,9 +151,9 @@ VSCODE_PID = 1366
 
 # Directories
 
-# . (device 16777225, inode 217013): 77 files, no impossibilities.
+# . (device 16777225, inode 217013): 78 files, no impossibilities.
 
-# 77 files, no impossibilities in 1 directories.
+# 78 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -165,7 +164,7 @@ VSCODE_PID = 1366
 # Not a target:
 ft_strmapi.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -174,7 +173,7 @@ ft_strmapi.o:
 # Not a target:
 ft_memcpy.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -183,7 +182,7 @@ ft_memcpy.o:
 # Not a target:
 ft_itoa.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -192,7 +191,7 @@ ft_itoa.o:
 # Not a target:
 ft_memcmp.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -201,7 +200,7 @@ ft_memcmp.o:
 # Not a target:
 ft_strlen.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -210,7 +209,7 @@ ft_strlen.o:
 # Not a target:
 ft_isdigit.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -228,7 +227,7 @@ all: libft.a
 # Not a target:
 ft_memchr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -237,7 +236,7 @@ ft_memchr.o:
 # Not a target:
 ft_memset.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -246,7 +245,7 @@ ft_memset.o:
 # Not a target:
 ft_tolower.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -255,7 +254,7 @@ ft_tolower.o:
 # Not a target:
 ft_strrchr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -264,7 +263,7 @@ ft_strrchr.o:
 # Not a target:
 ft_strjoin.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -273,7 +272,7 @@ ft_strjoin.o:
 # Not a target:
 ft_split.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -282,7 +281,7 @@ ft_split.o:
 # Not a target:
 ft_strlcat.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:31:52
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -306,7 +305,7 @@ Makefile:
 # Not a target:
 ft_isprint.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -315,7 +314,7 @@ ft_isprint.o:
  
 libft.a: ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_memchr.o ft_memcmp.o ft_strlen.o ft_isalpha.o ft_isdigit.o ft_isalnum.o ft_isascii.o ft_isprint.o ft_toupper.o ft_tolower.o ft_strchr.o ft_strrchr.o ft_strncmp.o ft_strlcpy.o ft_strlcat.o ft_strnstr.o ft_atoi.o ft_calloc.o ft_strdup.o ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o ft_itoa.o ft_strmapi.o ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o ft_striteri.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-06-27 11:44:40
+#  Last modified 2022-06-27 15:48:14
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -327,7 +326,7 @@ libft.a: ft_memset.o ft_bzero.o ft_memcpy.o ft_memmove.o ft_memchr.o ft_memcmp.o
 # Not a target:
 ft_striteri.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:14
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -336,7 +335,7 @@ ft_striteri.o:
 # Not a target:
 ft_bzero.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -345,7 +344,7 @@ ft_bzero.o:
 # Not a target:
 ft_putnbr_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:14
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -362,7 +361,7 @@ fclean: clean
 # Not a target:
 ft_calloc.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -371,7 +370,7 @@ ft_calloc.o:
 # Not a target:
 ft_substr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 11:44:40
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -380,7 +379,7 @@ ft_substr.o:
 # Not a target:
 ft_isalpha.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -395,7 +394,7 @@ ft_isalpha.o:
 # Not a target:
 ft_strlcpy.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -404,7 +403,7 @@ ft_strlcpy.o:
 # Not a target:
 ft_strncmp.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 11:29:39
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -426,7 +425,7 @@ clean:
 # Not a target:
 ft_isalnum.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -435,7 +434,7 @@ ft_isalnum.o:
 # Not a target:
 ft_strdup.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -444,7 +443,7 @@ ft_strdup.o:
 # Not a target:
 ft_memmove.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -453,7 +452,7 @@ ft_memmove.o:
 # Not a target:
 ft_strchr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -462,7 +461,7 @@ ft_strchr.o:
 # Not a target:
 ft_toupper.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -471,7 +470,7 @@ ft_toupper.o:
 # Not a target:
 ft_strnstr.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 11:31:27
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -480,7 +479,7 @@ ft_strnstr.o:
 # Not a target:
 ft_putstr_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -489,7 +488,7 @@ ft_putstr_fd.o:
 # Not a target:
 ft_atoi.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -498,7 +497,7 @@ ft_atoi.o:
 # Not a target:
 ft_putchar_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -507,7 +506,7 @@ ft_putchar_fd.o:
 # Not a target:
 ft_isascii.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:10
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -516,7 +515,7 @@ ft_isascii.o:
 # Not a target:
 ft_strtrim.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:13
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -525,7 +524,7 @@ ft_strtrim.o:
 # Not a target:
 ft_putendl_fd.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-27 09:24:11
+#  Last modified 2022-06-27 15:48:14
 #  File has been updated.
 #  Successfully updated.
 # variable set hash-table stats:
@@ -544,6 +543,6 @@ ft_putendl_fd.o:
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Finished Make data base on Mon Jun 27 12:33:51 2022
+# Finished Make data base on Mon Jun 27 15:51:31 2022
 
  

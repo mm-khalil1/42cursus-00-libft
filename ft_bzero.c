@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:26:46 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 12:22:48 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/27 17:53:11 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ void	ft_bzero(void *str, size_t n)
 {
 	char	*p;
 
-	if (!str)
-		return ;
 	p = str;
 	while (n > 0)
 	{

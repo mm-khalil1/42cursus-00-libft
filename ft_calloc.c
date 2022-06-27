@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mkhalil <mkhalil@student.42.fr>            +#+  +:+       +#+        */
+/*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:26:54 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 15:19:57 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/27 17:53:16 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	*ft_calloc(size_t n, size_t size)
 {
 	void	*p;
+
 	if (size != 0)
 		if (n > SIZE_MAX / size)
 			return (0);
