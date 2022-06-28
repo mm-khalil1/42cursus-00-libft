@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 17:52:57 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/28 16:36:32 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 17:05:40 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *str)
 {
-	int	sign;
-	int	num;
+	int				sign;
+	unsigned int	num;
 
 	sign = 1;
 	num = 0;
@@ -31,6 +31,5 @@ int	ft_atoi(const char *str)
 		return (-1);
 	if (num > 2147483648 && sign == -1)
 		return (0);
-	num *= sign;
-	return (num);
+	return (num * sign);
 }
