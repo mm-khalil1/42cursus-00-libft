@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:26:54 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:53:16 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:54:19 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	*ft_calloc(size_t n, size_t size)
 
 	if (size != 0)
 		if (n > SIZE_MAX / size)
-			return (0);
+			return (NULL);
 	p = malloc(n * size);
 	if (!p)
-		return (0);
+		return (NULL);
 	ft_bzero(p, size * n);
 	return ((void *)p);
 }

@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:32:06 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/28 16:39:32 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:56:15 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ void	*ft_memchr(const void *str, int c, size_t n)
 			return ((void *)p);
 		p++;
 	}
-	return (0);
+	return (NULL);
 }

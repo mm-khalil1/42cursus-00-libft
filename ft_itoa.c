@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:31:47 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/28 16:35:40 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:55:47 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	count_digits(int n)
 	return (count);
 }
 
-void	getnbr(char *num, int n, int i)
+static void	getnbr(char *num, int n, int i)
 {
 	int	test;
 
@@ -59,7 +59,7 @@ char	*ft_itoa(int n)
 
 	num = (char *) malloc (sizeof(char) * (count_digits(n) + 1));
 	if (!num)
-		return (0);
+		return (NULL);
 	i = 0;
 	if (n == -2147483648)
 	{

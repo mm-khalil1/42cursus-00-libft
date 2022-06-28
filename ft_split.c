@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:34:04 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/28 16:29:52 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:57:07 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,10 +56,10 @@ char	**ft_split(char const *s, char c)
 	char	**split;
 
 	if (!s)
-		return (0);
+		return (NULL);
 	split = (char **) malloc(sizeof(char *) * (count_words(s, c) + 1));
 	if (!split)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (*s)
 	{

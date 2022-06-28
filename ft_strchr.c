@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:34:12 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:54:20 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:57:12 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ char	*ft_strchr(const char *str, int c)
 		str++;
 	if (*str == (char)c)
 		return ((char *)str);
-	return (0);
+	return (NULL);
 }
