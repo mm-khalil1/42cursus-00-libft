@@ -6,13 +6,13 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:34:04 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:54:16 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:29:52 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	next_chr_ind(const char *s, char c, size_t i)
+static int	next_chr_ind(const char *s, char c, size_t i)
 {
 	while (s[i] == c && s[i])
 		i++;
@@ -21,7 +21,7 @@ int	next_chr_ind(const char *s, char c, size_t i)
 	return (i);
 }
 
-size_t	last_chr_ind(const char *s, char c)
+static size_t	last_chr_ind(const char *s, char c)
 {
 	size_t	i;
 
@@ -31,7 +31,7 @@ size_t	last_chr_ind(const char *s, char c)
 	return (i - 1);
 }
 
-int	count_words(const char *s, char c)
+static int	count_words(const char *s, char c)
 {
 	size_t	count;
 	int		i;

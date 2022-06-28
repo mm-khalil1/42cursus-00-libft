@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/27 17:52:57 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:52:58 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:36:32 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_atoi(const char *str)
 {
-	int				sign;
-	unsigned int	num;
+	int	sign;
+	int	num;
 
 	sign = 1;
 	num = 0;

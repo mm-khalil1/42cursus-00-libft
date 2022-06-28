@@ -6,13 +6,13 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:31:47 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:53:40 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:35:40 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count_digits(int n)
+static int	count_digits(int n)
 {
 	int	count;
 

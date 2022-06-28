@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:33:44 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:54:10 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:30:05 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	char	num;
 
-	if (fd < 1)
+	if (fd < 0)
 		return ;
 	if (n == -2147483648)
 	{

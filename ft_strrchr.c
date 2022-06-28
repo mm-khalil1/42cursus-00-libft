@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:36:03 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:54:58 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:40:49 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ char	*ft_strrchr(const char *str, int c)
 			return ((char *)&str[len]);
 		len--;
 	}	
-	return (0);
+	return (NULL);
 }

@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:32:50 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:53:58 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:28:26 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	unsigned char	*pd;
 
 	if (!dest && !src)
-		return (0);
+		return (NULL);
 	ps = (unsigned char *)(src);
 	pd = (unsigned char *)(dest);
 	i = 0;

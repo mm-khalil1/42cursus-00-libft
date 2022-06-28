@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:36:17 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:55:01 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:40:38 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*trim;
 
 	if (!s1 || !set)
-		return (0);
+		return (NULL);
 	while (ft_strchr(set, *s1) && *s1)
 		s1++;
 	if (*s1)

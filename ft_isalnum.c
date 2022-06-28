@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:27:05 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/23 13:01:17 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:36:07 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,5 @@ int	ft_isalnum(int c)
 		|| (c >= 'A' && c <= 'Z')
 		|| (c >= 'a' && c <= 'z'))
 		return (1);
-	else
-		return (0);
+	return (0);
 }

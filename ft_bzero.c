@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:26:46 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/27 17:53:11 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/06/28 16:39:07 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@ void	ft_bzero(void *str, size_t n)
 	char	*p;
 
 	p = str;
-	while (n > 0)
+	while (n-- > 0)
 	{
 		*p = 0;
 		p++;
-		n--;
 	}
 }

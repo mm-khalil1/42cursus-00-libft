@@ -1,7 +1,6 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/mkhalil/Desktop/42Cursus/libft'
 gcc -Wall -Wextra -Werror   -c -o ft_memset.o ft_memset.c
- 
 gcc -Wall -Wextra -Werror   -c -o ft_bzero.o ft_bzero.c
 gcc -Wall -Wextra -Werror   -c -o ft_memcpy.o ft_memcpy.c
 gcc -Wall -Wextra -Werror   -c -o ft_memmove.o ft_memmove.c
@@ -26,7 +25,6 @@ gcc -Wall -Wextra -Werror   -c -o ft_calloc.o ft_calloc.c
 gcc -Wall -Wextra -Werror   -c -o ft_strdup.o ft_strdup.c
 gcc -Wall -Wextra -Werror   -c -o ft_substr.o ft_substr.c
 gcc -Wall -Wextra -Werror   -c -o ft_strjoin.o ft_strjoin.c
- 
 gcc -Wall -Wextra -Werror   -c -o ft_strtrim.o ft_strtrim.c
 gcc -Wall -Wextra -Werror   -c -o ft_split.o ft_split.c
 gcc -Wall -Wextra -Werror   -c -o ft_itoa.o ft_itoa.c
