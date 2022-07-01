@@ -6,7 +6,7 @@
 #    By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/27 17:49:00 by mkhalil           #+#    #+#              #
-#    Updated: 2022/07/01 08:40:27 by mkhalil          ###   ########.fr        #
+#    Updated: 2022/07/01 11:07:23 by mkhalil          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,8 +54,7 @@ SRCSB = ft_lstnew.c			\
 		ft_lstlast.c		\
 		ft_lstdelone.c		\
 		ft_lstclear.c		\
-		ft_lstiter.c		\
-		ft_lstmap.c
+		ft_lstiter.c
 
 OBJS = $(SRCS:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 11:34:04 by mkhalil           #+#    #+#             */
-/*   Updated: 2022/06/28 16:57:07 by mkhalil          ###   ########.fr       */
+/*   Updated: 2022/07/01 11:08:52 by mkhalil          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static int	count_words(const char *s, char c)
 			return (count);
 		count++;
 		while (s[i] && s[i] != c)
-		i++;
+			i++;
 	}
 	return (count);
 }
