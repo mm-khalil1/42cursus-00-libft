@@ -6,7 +6,7 @@
 #    By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/27 17:49:00 by mkhalil           #+#    #+#              #
-#    Updated: 2022/06/27 17:55:20 by mkhalil          ###   ########.fr        #
+#    Updated: 2022/07/01 08:40:27 by mkhalil          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,7 +47,19 @@ SRCS = ft_memset.c		\
 	   ft_putnbr_fd.c	\
 	   ft_striteri.c
 
+SRCSB = ft_lstnew.c			\
+		ft_lstadd_front.c	\
+		ft_lstadd_back.c	\
+		ft_lstsize.c		\
+		ft_lstlast.c		\
+		ft_lstdelone.c		\
+		ft_lstclear.c		\
+		ft_lstiter.c		\
+		ft_lstmap.c
+
 OBJS = $(SRCS:.c=.o)
+
+OBJSB = $(SRCSB:.c=.o)
 
 CC = gcc
 
@@ -59,9 +71,12 @@ $(NAME): $(OBJS)
 	ar -rc $(NAME) $(OBJS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(OBJSB)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+bonus: $(NAME) $(OBJSB)
+	ar -rc $(NAME) $(OBJSB)
