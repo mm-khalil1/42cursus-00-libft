@@ -6,7 +6,7 @@
 #    By: mkhalil <mkhalil@student.42abudhabi.ae>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/06/27 17:49:00 by mkhalil           #+#    #+#              #
-#    Updated: 2022/07/01 11:07:23 by mkhalil          ###   ########.fr        #
+#    Updated: 2022/12/31 19:22:11 by mkhalil          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,7 +62,7 @@ OBJSB = $(SRCSB:.c=.o)
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS += -Wall -Wextra -Werror
 
 all: $(NAME)
 
