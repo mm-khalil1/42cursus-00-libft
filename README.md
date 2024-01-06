@@ -24,7 +24,6 @@ The first project at 42, libft, involves learning how the standard functions of 
 * [`ft_memcmp`](ft_memcmp.c)		- compare byte string.
 * [`ft_memmove`](ft_memmove.c)	- copy byte string.
 * [`ft_memcpy`](ft_memcpy.c)		- copy memory area.
-* [`ft_memccpy`](ft_memccpy.c)	- copy string until character found.
 
 ### Functions from `<string.h>` library
 
@@ -40,17 +39,16 @@ The first project at 42, libft, involves learning how the standard functions of 
 
 ### Non-standard functions
 
-* [`ft_putchar`](ft_putchar.c) 	- output a character to stdout.
 * [`ft_putchar_fd`](ft_putchar_fd.c)		- output a character to given file.
 * [`ft_putstr_fd`](ft_putstr_fd.c)		- output string to given file.
-* [`ft_putendl`](ft_putendl.c) 	- output string to stdout with newline.
 * [`ft_putendl_fd`](ft_putendl_fd.c)		- output string to given file with newline.
-* [`ft_putnbr`](ft_putnbr.c) 		- output integer to stdout.
 * [`ft_putnbr_fd`](ft_putnbr_fd.c)		- output integer to given file.
 * [`ft_itoa`](ft_itoa.c)					- convert integer to ASCII string.
 * [`ft_substr`](ft_substr.c)				- extract substring from string.
 * [`ft_strtrim`](ft_strtrim.c)			- trim beginning and end of string with the specified characters.
 * [`ft_strjoin`](ft_strjoin.c)			- concatenate two strings into a new string (with malloc).
+* [`ft_striteri`](ft_striteri.c) - iterates through a string, applying a function to each character along with its index.
+* [`ft_strmapi`](ft_strmapi.c) - generates a new string by applying a function to each character of the input string along with its index.
 * [`ft_split`](ft_split.c)				- split string, with specified character as delimiter, into an array of strings.
 
 ### Linked list functions
