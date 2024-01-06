@@ -42,7 +42,6 @@ The first project at 42, libft, involves learning how the standard functions of 
 
 * [`ft_putchar`](ft_putchar.c) 	- output a character to stdout.
 * [`ft_putchar_fd`](ft_putchar_fd.c)		- output a character to given file.
-* [`ft_putstr`](ft_putstr.c) 		- output string to stdout.
 * [`ft_putstr_fd`](ft_putstr_fd.c)		- output string to given file.
 * [`ft_putendl`](ft_putendl.c) 	- output string to stdout with newline.
 * [`ft_putendl_fd`](ft_putendl_fd.c)		- output string to given file with newline.
