@@ -17,10 +17,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	unsigned int	i;
 	char			*join;
 
-	if (s1 == 0 || s2 == 0)
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 	join = (char *) malloc(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1));
-	if (join == 0)
+	if (join == NULL)
 		return (NULL);
 	i = 0;
 	while (s1[i])
